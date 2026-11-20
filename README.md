@@ -13,7 +13,10 @@ Rev 06A is the baseline for a first mechanical fit-up. It uses three WobbleX WS8
 - [Build Manual, Rev B.2](docs/Apexion-X%20Build%20Manual.pdf). The steps include Rev 06A changes and Voron electrical references. The illustrations show the earlier v5 model.
 - [Printer specification](docs/Apexion-X%20Printer%20Specification.pdf). Travel and performance figures are design targets pending prototype measurements.
 
-Production STLs, BOM spreadsheets, panel DXFs and machine-specific firmware are pending. Use the fit check and actual measurements when choosing and fitting hardware.
+- [D3 BOM workbook](bom/D3_Apexion-X_BOM.xlsx) and [Rev 06A hardware notes](bom/README.md). Use the v5 workbook and Rev 06A changes together for fit-up.
+- [Enclosure panel DXFs and cutting notes](dxf/panels-mrw/README.md). Six cut profiles from the Rev 06A Fusion assembly cover the seven panels. Confirm door and electronics stock thickness.
+
+Production STLs and machine-specific firmware are pending. Use the fit check and actual measurements when choosing and fitting hardware.
 
 Fusion file SHA-256  
 `d5ef0b1e3e074932542bbbcaf8950234348e8cf20a4cbbd005f501e615de129b`
