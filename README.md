@@ -1,25 +1,55 @@
+<p align="center"><img src="docs/images/apexion-x-logo.png" alt="Apexion-X" width="420"></p>
+
 # Apexion-X
 
-Apexion-X is an enclosed CoreXY 3D printer with three independently driven Z axes.
+**CoreXY / Triple-Z** enclosed 3D printer. Its kinematics come from [RIFF220](https://github.com/itesdahl/RIFF220), the skirts are a remix of [TV06+](https://github.com/Terminal-Velocity-Collective/TV06_Plus), and the door and toolhead are the [Clicky-Clack Fridge Door](https://github.com/tanaes/whopping_Voron_mods/tree/main/clickyclacky_door) and [Dragon Burner](https://github.com/chirpy2605/voron/tree/main/V0/Dragon_Burner). See [Credits & license](#credits--license).
 
 ![Apexion-X front render](docs/images/apexion-x-render-front.png)
 
-## Rev 06A mechanical preview
+## Status: Rev 06A mechanical preview
+Rev 06A is approved for a first mechanical fit-up. It uses three WobbleX WS8 stacks in the existing dowel seats and unbraced Ø10 × 468 mm Y rods.
 
-Rev 06A is the baseline for a first mechanical fit-up. It uses three WobbleX WS8 stacks in the existing dowel seats and unbraced Ø10 × 468 mm Y rods. The build manual is provisional. Before ordering a heater, get supplier approval for the cutout pattern. Verify installed hardware, sweep the loaded bed through Z and tilt, and review the wiring, protections and Klipper configuration before power-on.
+The build manual is provisional, and the printer is not ready to build yet. Before you order or power on anything:
+- Get the heater supplier to approve the cutout pattern before ordering a heater.
+- Check the installed fastener and bearing stacks.
+- Sweep the loaded bed through Z and tilt before setting firmware limits.
+- Review the wiring, the protective devices and the Klipper configuration.
 
-- [Editable Fusion source](cad/Apexion-X-Rev-06A.f3d). Open or upload the .f3d archive in Autodesk Fusion.
-- [Rev 06A mechanical fit check](docs/design-reviews/2026-11-19-rev06a-mechanical-fit-check.md). The nine fit-up checks and the native CAD inspection views.
-- [Build Manual, Rev B.2](docs/Apexion-X%20Build%20Manual.pdf). The steps include Rev 06A changes and Voron electrical references. The illustrations show the earlier v5 model.
-- [Printer specification](docs/Apexion-X%20Printer%20Specification.pdf). Travel and performance figures are design targets pending prototype measurements.
+Production STLs and machine-specific firmware are not available yet. Choose and fit hardware from the [fit check](docs/design-reviews/2026-11-19-rev06a-mechanical-fit-check.md) and your own measurements.
 
-- [D3 BOM workbook](bom/D3_Apexion-X_BOM.xlsx) and [Rev 06A hardware notes](bom/README.md). Use the v5 workbook and Rev 06A changes together for fit-up.
-- [Enclosure panel DXFs and cutting notes](dxf/panels-mrw/README.md). Six cut profiles from the Rev 06A Fusion assembly cover the seven panels. Confirm door and electronics stock thickness.
+## Key specs
+These are design targets until a prototype has been measured. See the [Printer Specification](docs/Apexion-X%20Printer%20Specification.pdf).
+- Build volume 299 × 310 × 356 mm
+- 2020 extrusion frame: 25 pieces, about 12.4 m in total
+- CoreXY with stacked belts (A at Z 34.5, B at Z 44.5) and about 1.95 m of GT2 per belt
+- XY on Ø10 rods with LM10LUU bearings in the XY joints. X on a 345 mm MGN12 rail with an MGN12H carriage.
+- Triple-Z on lead screws with Ø10 rods and LM10UU bearings. The bed sits kinematically on three WobbleX WS8 stacks (Rev 06A).
+- Dragon Burner toolhead and BFI-style symmetric front idlers
+- Enclosure panels cut to DXF by Mandala Rose Works
+- v5 BOM counts: 138 printed parts, 316 screws, 134 T-nuts and 76 M3 heat-set inserts. Rev 06A changes some hardware; see the [BOM notes](bom/README.md).
 
-Production STLs and machine-specific firmware are pending. Use the fit check and actual measurements when choosing and fitting hardware.
+## Look
+- Black primary color with a red accent
+- The [AX badge](docs/images/apexion-x-ax-emblem.png) goes on the right front skirt only. The left skirt is blank.
+- The [Apexion-X logo](docs/images/apexion-x-logo.png) goes on the inside face of the rear panel.
+- Each mark can be etched or applied as a sticker. The sticker is cheaper. Neither choice changes any part dimension.
 
-Fusion file SHA-256  
-`d5ef0b1e3e074932542bbbcaf8950234348e8cf20a4cbbd005f501e615de129b`
+## What's in this repo
+| Path | Contents |
+|---|---|
+| [`cad/Apexion-X-Rev-06A.f3d`](cad/Apexion-X-Rev-06A.f3d) | Editable Fusion source (Rev 06A). Open it in Autodesk Fusion or upload it there. SHA-256 `d5ef0b1e3e074932542bbbcaf8950234348e8cf20a4cbbd005f501e615de129b` |
+| [`docs/`](docs/README.md) | Build Manual Rev B.2 and Printer Specification PDFs, build notes, and the design history |
+| [`docs/design-reviews/`](docs/design-reviews/) | Dated design checks, from the first TV06+ review to the Rev 06A fit check |
+| [`bom/`](bom/README.md) | D3 BOM workbook (v5 baseline) and the Rev 06A hardware changes. Use them together for fit-up. |
+| [`dxf/panels-mrw/`](dxf/panels-mrw/README.md) | Six cut profiles for the seven enclosure panels, with cutting notes. Confirm the door and electronics stock thickness. |
+
+Coming later: `stl/` for production printed parts and `firmware/` for Klipper config and macros.
+
+## Build documents
+- [Build Manual, Rev B.2 (PDF)](docs/Apexion-X%20Build%20Manual.pdf). Its steps include the Rev 06A changes and Voron electrical references. The illustrations show the earlier v5 model. See the [Rev B notes](docs/build/2026-11-17-build-manual-revB.md).
+- [Printer Specification (PDF)](docs/Apexion-X%20Printer%20Specification.pdf)
+- [Rev 06A mechanical fit check](docs/design-reviews/2026-11-19-rev06a-mechanical-fit-check.md)
+- [Design history](docs/README.md#design-history)
 
 ## Credits & license
 Copyright © 2026 Flam723 for the Apexion-X contributions. The project's contributions are licensed under the [GNU General Public License, version 3](LICENSE) (GPL-3.0-only). The GPL permits commercial and noncommercial redistribution under its terms.

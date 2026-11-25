@@ -11,7 +11,7 @@ Rev B was 89 pages in US Letter landscape. It replaced the 33-page manual of 202
 **Status: provisional, not build-ready.** The mechanics are documented. Electronics, wiring, firmware, torques and belt tension are not designed yet.
 
 ## Basis
-- Machine version: Fusion "Apexion-X STYLING 2026-11-06" v5, from the STEP export in `cad/`.
+- Machine version: Fusion "Apexion-X STYLING 2026-11-06" v5, exported to STEP (205 MB, not included here; the editable Rev 06A Fusion archive is in [`cad/`](../../cad/)).
 - Sources: the D1–D5 build package (2026-11-07: specifications, illustrated step tables, D3 BOM, D4 CAD package, D5 rear-panel emblem) and the design reviews in `docs/design-reviews/` and `docs/build/`.
 - The Voron Trident manual served only as a model for overall organisation. No text or artwork was copied.
 
